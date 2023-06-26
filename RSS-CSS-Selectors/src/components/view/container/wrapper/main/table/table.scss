@@ -1,0 +1,44 @@
+.wrapper-table{
+  text-align: center;
+  margin: 0 0 50px;
+}
+table{
+  display: inline-flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 10px;
+  padding: 20px 20px;
+  transform: perspective(1000px) rotateX(25deg);
+
+}
+
+plate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 100px;
+  
+}
+
+apple{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 100px;
+}
+
+bento{
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(17, 79, 194);
+  border-radius: 10px;
+}

@@ -7,7 +7,6 @@
     "es6": true
   },
   "rules": {
-    "no-var": "error",
     "semi": "error",
     "indent": "error",
     "no-multi-spaces": "error",
@@ -15,7 +14,9 @@
     "no-multiple-empty-lines": "error",
     "prefer-const": "error",
     "no-use-before-define": "error",
-    "@typescript-eslint/no-explicit-any": 2
+    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-non-null-assertion": "off"
   },
   "extends": [
     "eslint:recommended" ,

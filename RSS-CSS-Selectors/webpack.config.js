@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const EslingPlugin = require('eslint-webpack-plugin');
 
+
+
 module.exports = {
     entry: './src/index.ts',
     output: {
@@ -31,6 +33,9 @@ module.exports = {
                 },
             },
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js'],
     },
     plugins: [
         new HtmlWebpackPlugin({
