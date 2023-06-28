@@ -1,0 +1,9 @@
+.css-input{
+    display: block;
+    width: 330px;
+}
+@media (max-width: 600px) {
+    .css-input{
+        width: 280px;
+    }
+}

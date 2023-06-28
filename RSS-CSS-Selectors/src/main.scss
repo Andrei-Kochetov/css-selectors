@@ -1,11 +1,9 @@
 $font-size: 1rem;
-$font-color: lch(28 99 35);
 *{
   box-sizing: border-box;
 }
 html {
   font-size: $font-size;
-  color: $font-color;
   background-color: rgb(247, 156, 114);
 
 }

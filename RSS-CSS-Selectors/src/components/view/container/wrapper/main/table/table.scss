@@ -1,6 +1,33 @@
+@keyframes active{
+  0% {
+    transform: skew(4deg,0deg) scaleX(1);
+}
+10% {
+    transform: skew(1deg,0deg) scaleY(.9);
+}
+50% {
+    transform: skew(-4deg,0deg) scaleX(1);
+}
+60% {
+    transform: skew(-1deg,0deg) scaleY(.9);
+}
+100% {
+    transform: skew(4deg,0deg) scaleX(1);
+}
+}
+@keyframes hideElement{
+  0% {
+    transform: translateY(0px)
+  }
+
+  100% {
+      transform: translateY(-1000px) ;
+  }
+}
+
 .wrapper-table{
   text-align: center;
-  margin: 0 0 50px;
+  margin: 0 0 25px;
 }
 table{
   display: inline-flex;
@@ -13,9 +40,14 @@ table{
   border-radius: 10px;
   padding: 20px 20px;
   transform: perspective(1000px) rotateX(25deg);
-
 }
 
+.active{
+  animation: active 1s infinite;
+}
+.hide{
+  animation: hideElement 1.5s ease-in;
+}
 plate{
   display: flex;
   justify-content: center;
@@ -24,7 +56,6 @@ plate{
   width: 40px;
   background-color: white;
   border-radius: 100px;
-  
 }
 
 apple{

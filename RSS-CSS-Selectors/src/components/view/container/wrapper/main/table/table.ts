@@ -8,14 +8,14 @@ type optionObject = {
 
 
 export class Table extends BasicElement {
-    boardMarkup;
-    constructor(option: optionObject, boardMarkup: string){
+    viewMarkup;
+    constructor(option: optionObject, viewMarkup: string){
         super(option);
-        this.boardMarkup = boardMarkup;
+        this.viewMarkup = viewMarkup;
         this.createElement();
     } 
     createElement():void {
         super.createElement();
-        this.element.innerHTML = this.boardMarkup;
+        this.element.innerHTML = this.viewMarkup;
     }
 }

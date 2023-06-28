@@ -4,3 +4,13 @@
     width: 200px;
     margin-left: 270px;
 }
+@media (max-width: 800px) {
+    .name-task{
+        margin-left: 150px;
+    }
+}
+@media (max-width: 650px) {
+    .name-task{
+        margin-left: 70px;
+    }
+}
