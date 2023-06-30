@@ -1,6 +1,18 @@
 .css-input{
     display: block;
     width: 330px;
+    background: rgb(35, 36, 31);
+    border:none;
+    font-size: 16px;
+    color: #f92672;
+    border-top-left-radius: 5px;
+    outline: none;
+    animation: input 10s infinite;
+}
+@keyframes input {
+    50% {
+        background: #acacac;
+    }
 }
 @media (max-width: 600px) {
     .css-input{

@@ -14,6 +14,6 @@ export class Date extends BasicElement {
     } 
     createElement():void {
         super.createElement();
-        this.element.textContent = '30.06.2023';
+        this.element.textContent = '6.23';
     }
 }

@@ -27,7 +27,7 @@
 
 .wrapper-table{
   text-align: center;
-  margin: 0 0 25px;
+  margin: 15px 0 15px;
 }
 table{
   display: inline-flex;
@@ -36,10 +36,12 @@ table{
   justify-content: center;
   min-width: 100px;
   height: 100px;
-  background-color: orange;
+  background-color: #27ecbb;
   border-radius: 10px;
   padding: 20px 20px;
-  transform: perspective(1000px) rotateX(25deg);
+  transform: perspective(250px) rotateX(25deg);
+  border: solid rgba(0,0,0,.2);
+  border-width: 1px 2px 7px 2px;
 }
 
 .active{
@@ -48,28 +50,66 @@ table{
 .hide{
   animation: hideElement 1.5s ease-in;
 }
-plate{
+dish{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   background-color: white;
   border-radius: 100px;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+  border: solid rgba(0,0,0,.2);
+
 }
 
 apple{
   display: block;
-  height: 20px;
-  width: 20px;
-  background-color: red;
-  border-radius: 100px;
-}
-
-bento{
-  display: block;
   height: 30px;
   width: 30px;
-  background-color: rgb(17, 79, 194);
-  border-radius: 10px;
+  background-color: rgb(86, 179, 11);
+  border-radius: 100px;
+  border: solid rgba(0,0,0,.2);
+  border-width: 1px 2px 7px 2px;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+}
+
+tray{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  height: 60px;
+  width: 70px;
+  background-color: rgb(206, 7, 189);
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+  border: solid rgba(0,0,0,.2);
+
+}
+moon{
+width: 30px; 
+height: 30px; 
+margin: -1px 6px 9px -10px;
+border-radius: 50%;
+box-shadow: 5px 5px 0 0 #FEC712;
+}
+packman{
+  width: 0; 
+  height: 0;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #517aff;
+  border-left: 20px solid #517aff;
+  border-bottom: 20px solid #517aff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#border{
+  border: 5px solid rgba(252, 16, 16, 0.767);
+}
+.small{
+  width: 20px;
+  height: 20px;
 }

@@ -4,8 +4,10 @@ $font-size: 1rem;
 }
 html {
   font-size: $font-size;
-  background-color: rgb(247, 156, 114);
-
+  background:  radial-gradient(circle, rgba(218,203,179,1) 0%, rgba(100,90,74,1) 100%);
+  color: rgba(255,255,255,.7);
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
 }
 body{
   margin: 0;

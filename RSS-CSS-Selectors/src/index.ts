@@ -63,9 +63,9 @@ const footer = new Footer(FOOTER_OPTIONS);
 footer.appended(wrapper.element);
 
 const aside = new Aside(ASIDE_OPTIONS, levels.length);
-/* if(localStorage.getItem('asideInnerHtml')){
+if(localStorage.getItem('asideInnerHtml')){
     aside.element.innerHTML = JSON.parse(localStorage.getItem('asideInnerHtml')!);
-} */
+}
 aside.appended(container.element);
 
 const input: HTMLInputElement = document.querySelector('.css-input') as HTMLInputElement;
@@ -76,6 +76,7 @@ const levelNavs = document.querySelectorAll('.level-elem');
 const enterButton = document.querySelector('.btn-enter');
 const resetButton = document.querySelector('.btn-reset');
 const table = document.querySelector('.table');
+const descriptionLevel = document.querySelector('.description-level');
 
 function currentLevel(){
     levelNavs.forEach(el=>{
@@ -91,6 +92,7 @@ function delay(ms:number) {
 
 function viewDateLevel(){
     level = levels[curr];
+    descriptionLevel!.textContent = level.doThis!;
     table!.innerHTML = level.viewMarkup!;
     codeArea!.textContent = level.boardMarkup!;
     input.value = '';
@@ -108,10 +110,10 @@ async function showWin(){
 }
 
 function nextLevel(){
-    if(countPassedLevel === levels.length){
+    if(countPassedLevel === levels.length || curr === levels.length - 1){
         showWin();
     } else{
-        if(curr >= levels.length - 1){
+        if(curr > levels.length - 1){
             curr = 0;
         } else{
             curr += 1; 

@@ -6,7 +6,14 @@ pre{
     height: 300px;
     margin: 0 auto;
     display: block !important;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
+ .scroll-block {overflow-y: scroll}
+.scroll-block::-webkit-scrollbar-track {border-radius: 4px;}
+.scroll-block::-webkit-scrollbar {width: 6px;}
+.scroll-block::-webkit-scrollbar-thumb {border-radius: 4px;background: #f0f2f5;}
+.scroll-block:hover::-webkit-scrollbar-thumb {background: #6a7d9b;} 
 @media (max-width: 600px) {
     .code-area{
 		width: 350px;

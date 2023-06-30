@@ -8,6 +8,9 @@
         color: rgb(0, 0, 0); 
         margin-right: 10px;
     }
+    &:hover{
+        background-color: rgba(238, 238, 238, 0.1);
+    }
 }
 .complite-elem{
     &::before{
@@ -20,5 +23,5 @@
     }
 }
 .current-level{
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, 0.1);
 }

@@ -1,0 +1,11 @@
+.description-level{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+}
+@media (max-width: 650px) {
+    .description-level{
+        font-size: 28px;
+    }
+}

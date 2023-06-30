@@ -1,6 +1,7 @@
 
 import './main.scss';
 import { BasicElement } from "../../../../util/basicElement";
+import { DescriptionLevel } from './description-level/description-level';
 import { Table } from './table/table';
 import { CssInput } from './input-wrapper/css_input/css_input';
 import { CodeArea } from './code_area/code_area';
@@ -24,6 +25,10 @@ interface ObjLevel {
 
 }
 
+const DESCRIPTION_LEVEL_OPTIONS = {
+    tag: 'div',
+    classNames: ['description-level']
+};
 const TABLE_OPTIONS = {
     tag: 'table',
     classNames: ['table']
@@ -42,9 +47,10 @@ const BUTTON_ENTER_OPTIONS = {
 };
 const CODE_AREA_OPTIONS = {
     tag: 'code',
-    classNames: ['code-area','language-html']
+    classNames: ['code-area','language-html', 'scroll-block']
 };
 export class Main extends BasicElement {
+    description;
     table;
     inputWrapper;
     cssInput;
@@ -58,6 +64,8 @@ export class Main extends BasicElement {
         super(option);
         this.level = level;
 
+        this.description = new DescriptionLevel(DESCRIPTION_LEVEL_OPTIONS, level.doThis!);
+        this.description.appended(this.element);
         this.wrapperTable = document.createElement('div');
         this.wrapperTable.classList.add('wrapper-table');
         this.table = new Table(TABLE_OPTIONS, level.viewMarkup!);
