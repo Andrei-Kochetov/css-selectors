@@ -1,6 +1,5 @@
 const hljs = require('highlight.js');
 require('highlight.js/scss/monokai-sublime.scss');
-require('highlightjs-line-numbers.js/src/highlightjs-line-numbers.js');
 
 import { levels } from './levels';
 import './main.scss';
@@ -14,7 +13,6 @@ import {Aside} from './components/view/container/aside/aside';
 
 document.addEventListener('DOMContentLoaded', () => {
     hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
 });
 
 

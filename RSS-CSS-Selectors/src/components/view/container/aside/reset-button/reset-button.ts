@@ -8,12 +8,12 @@ type optionObject = {
 
 
 export class ButtonReset extends BasicElement {
-    selector:string;
+    private selector:string;
     element: HTMLButtonElement;
     constructor(option: optionObject){
         super(option);
     } 
-    createElement():void {
+    public createElement():void {
         super.createElement();
         this.element.textContent = 'Reset';
     }

@@ -8,15 +8,15 @@ type optionObject = {
 
 
 export class LevelNavElem extends BasicElement {
-    levelNum;
+    public levelNum;
     constructor(option: optionObject, levelNum:number){
         super(option);
         this.levelNum = levelNum;
         this.createElement();
     }  
-    createElement(): void {
+    public createElement(): void {
         super.createElement();
         this.element.textContent = `${this.levelNum}`;
-        
+
     }
 }

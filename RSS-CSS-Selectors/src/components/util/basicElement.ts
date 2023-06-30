@@ -14,18 +14,18 @@ export class BasicElement{
         this.createElement();
     }
 
-    createElement():void {
+    public createElement():void {
         this.element = document.createElement(this.option.tag);
         this.setCssClasses(this.option.classNames);
     }
 
-    setCssClasses(arrClass: string[]):void{
+    public setCssClasses(arrClass: string[]):void{
         arrClass.forEach(el=>{
             this.element.classList.add(el);
         });
         
     }
-    appended(element: HTMLElement):void{
+    public appended(element: HTMLElement):void{
         element.append(this.element);
     }
 }
